@@ -1,0 +1,48 @@
+.item-bg {
+  background-color: #FF111328;
+  height: 130px;
+  border-radius: 20px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sexo {
+  font-weight: 1000;
+}
+
+.num-style {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: -15px;
+}
+
+.cm {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: -7px;
+}
+
+.form-range {
+  padding: 0 20px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #FF3366;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+  background-color: #ca1b47;
+}
+
+.suma-resta {
+  cursor: pointer;
+  background-color: #FF4C4F5E;
+  border-radius: 25px;
+  margin-left: 5px;
+  padding: 4px 7px;
+  font-size: 0.625em;
+}
+.buttons {
+  margin-top: -15px;
+}
