@@ -1,1 +1,21 @@
-<p>resultado works!</p>
+<div class="row">
+  <div class="col-8 offset-2 col-lg-4 offset-lg-4">
+    <h2 class="title">RESULT</h2>
+    <div class="row">
+      <div class="col-12">
+        <div class="item-bg">
+          <div class="content">
+            <h5 class="result">{{ result }}</h5>
+            <h5 class="number">{{ bmi }}</h5>
+            <h5 class="interpretacion">{{ interpr }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button routerLink="/" class="btn btn-lg btn-primary btn-color">Re-calculate</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.item-bg {
+  background-color: #530e0f;
+  height: 430px;
+  border-radius: 20px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.result {
+  color: rgb(2, 129, 2);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 750;
+}
+
+.number {
+  font-size: 80px;
+  font-weight: 700;
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.interpretacion {
+  margin: 10px;
+  text-align: center;
+}
