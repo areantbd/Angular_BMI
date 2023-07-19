@@ -1,5 +1,5 @@
 .item-bg {
-  background-color: #FF111328;
+  background-color: #530e0f;
   height: 130px;
   border-radius: 20px;
   color: white;
@@ -45,4 +45,8 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 .buttons {
   margin-top: -15px;
+}
+
+.innactive-sex {
+  background-color: #ff111527;
 }

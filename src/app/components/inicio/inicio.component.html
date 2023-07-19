@@ -3,16 +3,16 @@
     <h2 class="title">BMI CALCULATOR</h2>
     <div class="row">
       <div class="col-6">
-        <div class="item-bg">
-          <div class="content">
+        <div class="item-bg" [ngClass]="{ 'innactive-sex': sex === 'fem'}">
+          <div class="content" style="cursor: pointer;" (click)="masc()">
             <i class="fa fa-mars sexo" aria-hidden="true"></i>
             <p>MASC</p>
           </div>
         </div>
       </div>
       <div class="col-6">
-        <div class="item-bg">
-          <div class="content">
+        <div class="item-bg" [ngClass]="{ 'innactive-sex': sex === 'masc'}">
+          <div class="content" style="cursor: pointer;" (click)="fem()">
             <i class="fa fa-venus sexo" aria-hidden="true"></i>
             <p>FEM</p>
           </div>
@@ -23,12 +23,12 @@
       <div class="col-12">
         <div class="item-bg">
           <div class="content">
-            <h5>Altura</h5>
+            <h5>Height</h5>
             <div class="num-style">
-              170
+              {{ height }}
               <span class="cm">cms</span>
             </div>
-            <input type="range" class="form-range">
+            <input type="range" (input)="changeHeight($event)" [value]="height" min="120" max="220" class="form-range">
           </div>
         </div>
       </div>
@@ -37,11 +37,11 @@
       <div class="col-6">
         <div class="item-bg">
           <div class="content">
-            <h5>Peso</h5>
-            <div class="num-style">122</div>
+            <h5>Weight</h5>
+            <div class="num-style">{{ weight }}</div>
             <div class="buttons">
-              <i class="fa fa-minus suma-resta" aria-hidden="true"></i>
-              <i class="fa fa-plus suma-resta" aria-hidden="true"></i>
+              <i class="fa fa-minus suma-resta" aria-hidden="true" (click)="weight = weight - 1"></i>
+              <i class="fa fa-plus suma-resta" aria-hidden="true" (click)="weight = weight + 1"></i>
             </div>
           </div>
         </div>
@@ -49,11 +49,11 @@
       <div class="col-6">
         <div class="item-bg">
           <div class="content">
-            <h5>Edad</h5>
-            <div class="num-style">36</div>
+            <h5>Age</h5>
+            <div class="num-style">{{ age }}</div>
             <div class="buttons">
-              <i class="fa fa-minus suma-resta" aria-hidden="true"></i>
-              <i class="fa fa-plus suma-resta" aria-hidden="true"></i>
+              <i class="fa fa-minus suma-resta" aria-hidden="true" (click)="age = age - 1"></i>
+              <i class="fa fa-plus suma-resta" aria-hidden="true" (click)="age = age + 1"></i>
             </div>
           </div>          
         </div>
@@ -61,7 +61,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <button class="btn btn-primary btn-lg btn-block btn-color">Calculate</button>
+        <button (click)="bmiCalc()" class="btn btn-primary btn-lg btn-block btn-color">Calculate</button>
       </div>
     </div>
   </div>
